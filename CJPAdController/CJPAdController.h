@@ -6,7 +6,6 @@
 //  Copyright (c) 2011-2015 Midnight Labs. All rights reserved.
 //
 
-@import iAd;
 @import GoogleMobileAds;
 
 // Testing things? Uncomment the line below and various events will be logged.
@@ -24,7 +23,7 @@ typedef NS_ENUM(NSInteger, CJPAdPosition) {
 };
 
 
-@interface CJPAdController : UIViewController <ADBannerViewDelegate, GADBannerViewDelegate>
+@interface CJPAdController : UIViewController <GADBannerViewDelegate>
 
 // Get the shared instance
 + (CJPAdController *)sharedInstance;
